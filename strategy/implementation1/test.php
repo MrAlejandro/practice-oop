@@ -6,6 +6,7 @@ require_once __DIR__ . '/quack_behavior/interfaces/quack_behavior.php';
 require_once __DIR__ . '/abstract_classes/duck.php';
 require_once __DIR__ . '/fly_behavior/fly_no_way.php';
 require_once __DIR__ . '/fly_behavior/fly_with_wings.php';
+require_once __DIR__ . '/fly_behavior/fly_with_rocket_thust.php';
 require_once __DIR__ . '/quack_behavior/mute_quack.php';
 require_once __DIR__ . '/quack_behavior/quack.php';
 require_once __DIR__ . '/quack_behavior/squick.php';
@@ -38,3 +39,6 @@ $wooden_duck->swim();
 $wooden_duck->performQuack();
 $wooden_duck->performFly();
 
+// modification at runtime
+$wooden_duck->setFlyBehavior(new FlyWithRocketThrust());
+$wooden_duck->performFly();
