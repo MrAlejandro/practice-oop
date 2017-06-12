@@ -1,17 +1,16 @@
 <?php
 
-class WoodenDuck extends Duck
+class RubberDuck extends Duck
 {
     public function __construct()
     {
-        $this->quackBehavior = new MuteQuack();
+        $this->quackBehavior = new Squick();
         $this->flyBehavior = new FlyNoWay();
     }
 
     public function display()
     {
-        echo "I'm a wooden duck" . PHP_EOL;
+        echo "I'm a yellow cute duck" . PHP_EOL;
     }
 }
-
 
