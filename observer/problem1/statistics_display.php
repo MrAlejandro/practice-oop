@@ -2,16 +2,16 @@
 
 class StatisticsDisplay implements Display
 {
-    public function update($tmperature, $humidity, $pressure)
+    public function update($temperature, $humidity, $pressure)
     {
         // do some statistics stuff here
-        $this->display($tmperature, $humidity, $pressure);
+        $this->display($temperature, $humidity, $pressure);
     }
 
-    public function display($tmperature, $humidity, $pressure)
+    public function display($temperature, $humidity, $pressure)
     {
-        echo 'The weathre statistics:' . PHP_EOL;
-        echo "Statistical temperature: $tmperature" . PHP_EOL;
+        echo 'The weather statistics:' . PHP_EOL;
+        echo "Statistical temperature: $temperature" . PHP_EOL;
         echo "Statistical humidity: $humidity" . PHP_EOL;
         echo "Statistical pressure: $pressure" . PHP_EOL;
         echo PHP_EOL;

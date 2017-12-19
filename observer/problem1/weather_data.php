@@ -2,17 +2,17 @@
 
 class WeatherData
 {
-    public $tempereture;
+    public $temperature;
     public $humidity;
     public $pressure;
 
-    public $currentCoditionsDisplay;
+    public $currentConditionsDisplay;
     public $statisticsDisplay;
     public $forecastDisplay;
 
     public function __construct()
     {
-        $this->currentCoditionsDisplay = new CurrentCoditionsDisplay();
+        $this->currentConditionsDisplay = new CurrentConditionsDisplay();
         $this->statisticsDisplay = new StatisticsDisplay();
         $this->forecastDisplay = new ForecastDisplay();
     }
@@ -23,7 +23,7 @@ class WeatherData
         $this->humidity = $this->getHumidity();
         $this->pressure = $this->getPressure();
 
-        $this->currentCoditionsDisplay->update($this->temperature, $this->humidity, $this->pressure);
+        $this->currentConditionsDisplay->update($this->temperature, $this->humidity, $this->pressure);
         $this->statisticsDisplay->update($this->temperature, $this->humidity, $this->pressure);
         $this->forecastDisplay->update($this->temperature, $this->humidity, $this->pressure);
     }

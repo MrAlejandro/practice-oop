@@ -2,16 +2,16 @@
 
 class ForecastDisplay implements Display
 {
-    public function update($tmperature, $humidity, $pressure)
+    public function update($temperature, $humidity, $pressure)
     {
-        // do some dorecast stuff here
-        $this->display($tmperature, $humidity, $pressure);
+        // do some forecast stuff here
+        $this->display($temperature, $humidity, $pressure);
     }
 
-    public function display($tmperature, $humidity, $pressure)
+    public function display($temperature, $humidity, $pressure)
     {
-        echo 'The weathre forecast:' . PHP_EOL;
-        echo "Forecast temperature: $tmperature" . PHP_EOL;
+        echo 'The weather forecast:' . PHP_EOL;
+        echo "Forecast temperature: $temperature" . PHP_EOL;
         echo "Forecast humidity: $humidity" . PHP_EOL;
         echo "Forecast pressure: $pressure" . PHP_EOL;
         echo PHP_EOL;
