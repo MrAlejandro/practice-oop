@@ -2,7 +2,10 @@
 
 abstract class Duck
 {
+    /** @var  \FlyBehavior $flyBehavior */
     protected $flyBehavior;
+
+    /** @var  \QuackBehavior $quackBehavior */
     protected $quackBehavior;
 
     abstract public function display();
