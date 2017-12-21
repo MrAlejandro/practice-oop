@@ -16,5 +16,4 @@ $f = new ForecastDisplay($wd);
 $s = new StatisticsDisplay($wd);
 
 $wd->measurementsChanged();
-sleep(3);
 $wd->measurementsChanged();
