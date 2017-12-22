@@ -1,4 +1,4 @@
-# Strategy
+# Observer
 ## Definition
 The **Observer** pattern defined as "one-to-many" relationships between objects, such that when the state of one object (Subject) changes, other objects (Observers) are automatically notified.
 
