@@ -9,4 +9,9 @@ class ChicagoStyleCheesePizza extends Pizza
         $this->sauce = 'Marinara Sauce';
         array_push($this->toppings, 'Grated Reggiano Cheese');
     }
+
+    public function cut()
+    {
+        echo 'Cutting pizza into squares' . PHP_EOL;
+    }
 }

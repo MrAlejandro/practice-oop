@@ -9,4 +9,9 @@ class ChicagoStyleGreekPizza extends Pizza
         $this->sauce = 'Olive Sauce';
         array_push($this->toppings, 'Goat Cheese');
     }
+
+    public function cut()
+    {
+        echo 'Cutting pizza into squares' . PHP_EOL;
+    }
 }
