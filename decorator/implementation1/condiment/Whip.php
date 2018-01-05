@@ -1,6 +1,6 @@
 <?php
 
-class Whip extends CondimenDecorator
+class Whip extends CondimentDecorator
 {
     public function getDescription()
     {

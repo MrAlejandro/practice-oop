@@ -1,6 +1,6 @@
 <?php
 
-abstract class CondimenDecorator extends Beverage
+abstract class CondimentDecorator extends Beverage
 {
     protected $beverage;
 

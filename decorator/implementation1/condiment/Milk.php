@@ -1,6 +1,6 @@
 <?php
 
-class Milk extends CondimenDecorator
+class Milk extends CondimentDecorator
 {
     public function getDescription()
     {

@@ -1,6 +1,6 @@
 <?php
 
-class Mocha extends CondimenDecorator
+class Mocha extends CondimentDecorator
 {
     public function getDescription()
     {

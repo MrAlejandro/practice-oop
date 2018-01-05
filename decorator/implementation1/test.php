@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/Beverage.php';
-require_once __DIR__ . '/CondimenDecorator.php';
+require_once __DIR__ . '/CondimentDecorator.php';
 require_once __DIR__ . '/Espresso.php';
 require_once __DIR__ . '/HouseBlend.php';
 require_once __DIR__ . '/condiment/Milk.php';

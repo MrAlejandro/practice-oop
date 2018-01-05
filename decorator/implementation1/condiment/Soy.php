@@ -1,6 +1,6 @@
 <?php
 
-class Soy extends CondimenDecorator
+class Soy extends CondimentDecorator
 {
     public function getDescription()
     {
