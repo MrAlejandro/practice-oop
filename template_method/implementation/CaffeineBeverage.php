@@ -7,7 +7,12 @@ abstract class CaffeineBeverage
         $this->boilWater();
         $this->brew();
         $this->pourInCup();
-        $this->addCondiments();
+
+        if ($this->wantCondiments()) {
+            $this->addCondiments();
+        }
+
+        $this->hook();
     }
 
     abstract function brew();
@@ -23,4 +28,11 @@ abstract class CaffeineBeverage
     {
         echo 'Pouring drink into cup' . PHP_EOL;
     }
+
+    public function wantCondiments()
+    {
+        return true;
+    }
+
+    public function hook() {}
 }
