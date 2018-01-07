@@ -6,8 +6,9 @@ require_once __DIR__ . '/HasQuarterState.php';
 require_once __DIR__ . '/NoQuarterState.php';
 require_once __DIR__ . '/SoldOutState.php';
 require_once __DIR__ . '/SoldState.php';
+require_once __DIR__ . '/WinnerState.php';
 
-$gumballMachine = new GumballMachine(3);
+$gumballMachine = new GumballMachine(77);
 
 $gumballMachine->insertQuarter();
 $gumballMachine->turnCrank();
